@@ -1,0 +1,14 @@
+{
+  "source": ["aws.s3"],
+  "detail-type": ["Object Created"],
+  "detail": {
+    "bucket": {
+      "name": ["ka-test-bucket-11"]
+    },
+    "object": {
+      "key": [{
+        "prefix": "auto_translate/"
+      }]
+    }
+  }
+}

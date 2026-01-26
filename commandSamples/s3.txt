@@ -1,0 +1,2 @@
+# 上传文件触发lambda
+aws s3 cp "D:\Videos\v_12345678_202601221204123.mp4" s3://ka-test-bucket-11/auto_translate/

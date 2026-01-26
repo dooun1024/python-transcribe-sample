@@ -1,0 +1,3 @@
+
+Transcribe
+    job名的设定格式:auto_tslt_{8位work_id}_{yyyymmddHHMMssSSS}

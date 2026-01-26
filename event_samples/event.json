@@ -1,0 +1,28 @@
+{
+    "version": "0",
+    "id": "b2aa31b1-4608-346e-7fb4-3dc3a75f297a",
+    "detail-type": "Object Created",
+    "source": "aws.s3",
+    "account": "637423206596",
+    "time": "2026-01-22T02:58:49Z",
+    "region": "ap-northeast-1",
+    "resources": [
+        "arn:aws:s3:::ka-test-bucket-11"
+    ],
+    "detail": {
+        "version": "0",
+        "bucket": {
+            "name": "ka-test-bucket-11"
+        },
+        "object": {
+            "key": "auto_translate/v_12345678_202601221204123.mp4",
+            "size": 2190599,
+            "etag": "cc176cf0df3687a69c422399725e72ad",
+            "sequencer": "0069719269A9D2623A"
+        },
+        "request-id": "Q1HQ0935GJR1TGAV",
+        "requester": "637423206596",
+        "source-ip-address": "126.12.116.128",
+        "reason": "PutObject"
+    }
+}

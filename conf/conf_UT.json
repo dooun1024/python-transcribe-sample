@@ -1,0 +1,14 @@
+{
+    "s3_buckets": [
+        "ka-test-bucket-11",
+        "ka-test-bucket-12",
+        "test-bucket-2024-ka"
+    ],
+    "transcribe": {
+        "output_bucket": "ka-test-bucket-12",
+        "output_prefix": "translate/1_vtt_org/",
+        "identify_language": true,
+        "media_format": "mp4",
+        "subtitle_formats": ["vtt"]
+    }
+}

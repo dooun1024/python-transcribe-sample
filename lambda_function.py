@@ -35,18 +35,19 @@ def load_config():
 
 def extract_work_info(object_key):
     """
-    从object key中提取work_id和datetime
+    从object key中提取media_type、work_id和datetime
     例如: auto_translate/v_12345678_202601221204123.mp4
-    返回: work_id=12345678, datetime=202601221204123
+    返回: media_type=v, work_id=12345678, datetime=202601221204123
     """
     filename = os.path.basename(object_key)
-    pattern = r'v_(\d+)_(\d+)'
+    pattern = r'([a-zA-Z]+)_(\d+)_(\d+)'
     match = re.search(pattern, filename)
 
     if match:
         return {
-            'work_id': match.group(1),
-            'datetime': match.group(2)
+            'media_type': match.group(1),
+            'work_id': match.group(2),
+            'datetime': match.group(3)
         }
     return None
 

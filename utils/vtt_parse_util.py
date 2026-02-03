@@ -123,14 +123,17 @@ if __name__ == '__main__':
 00:00:10.000 --> 00:00:18.000
 这是第二条字幕。
 """
+    
+    subtitles = parse_vtt(test_vtt)
 
-    # 解析测试
-    result = parse_vtt(test_vtt)
-    print("解析结果：")
-    for sub in result:
-        print(f"  {sub}")
+    # 遍历数组，在每条字幕的 content 末尾加上 "test"
+    for subtitle in subtitles:
+        subtitle.content = subtitle.content + " test"
 
-    # 还原测试
-    restored = restore_vtt(result)
-    print("\n还原结果：")
-    print(restored)
+    # 查看修改后的结果
+    for sub in subtitles:
+        print(f"{sub.index}: {sub.content}")
+
+    # 还原成 VTT 格式
+    result_vtt = restore_vtt(subtitles)
+    print(result_vtt)
